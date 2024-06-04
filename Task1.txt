@@ -1,0 +1,33 @@
+List the test cases for the home page:
+
+Smoke test cases: (Basic functionality tests to make sure app has basics working)
+    - Homepage loads correctly
+    - Users can click on links tabs, search box etc. (all links working)
+    - Users can use search box (returns relevant results, check for scripting attacks)
+    - Users can login/register (Login has popup modal)
+
+Sanity Test Cases: (To make sure core funstionality is working)
+    - Page loads correctly
+    - Navigation links take user to relevent location
+    - Search functionality
+    - Search box (check scripting attacks etc.)
+    - Users can login/register
+    - Trending categories displayed and takes user to relevant location
+    - All buttons work
+    - Responsive design (For mobile, web browsers etc.)
+
+Regression Test Cases: 
+    - Navigation links work for Users
+    - Search button works 
+    - Search box works (Positive test case)
+    - Login/Register links work for user (login has pop up modal, check responsiveness of this)
+    - Check ad banners and links work
+    - Accessibility tests for those witgh disabilities (i.e. can tab to everything, high contrast colour)
+    - Check any expected error messages (block api call in dev tools to check this)
+
+Integration Test Cases:
+    - Check api call for search box (Positive and negative test cases)
+    - Check expected error message responses from api
+
+
+
