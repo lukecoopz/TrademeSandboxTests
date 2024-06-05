@@ -29,4 +29,9 @@ Integration Test Cases:
     - Check api call for search box (Positive and negative test cases)
     - Check expected error message responses from api
 
+Automation recommendation:
+    - Smoke suite, these are critical bare minimum requirements of the system and should be tested on every new deploy.
+    - Sanity suite, more in depth core functionalities that can also be quickly validated
+    - Regression suite, always good to keep building this out and will always be a work in progress as more features get added but can save time. Improves robustness.
+
 

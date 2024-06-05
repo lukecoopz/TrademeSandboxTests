@@ -30,4 +30,23 @@ describe('GET REQUESTS', () =>{
         // 400 no category that is 999
         expect(response.status).toBe(400)
     })
+    it('Returns all motorbike subcategories', async () => {
+        const response = await request.get('/0001-0026-1255-.json')
+        // 200 ok
+        expect(response.status).toBe(200)
+        expect(response.body.Path).toBe('/Trade-Me-Motors/Motorbikes/Motorbikes')
+        expect(response.body.Subcategories.length).toEqual(10)
+    })
+    it('Returns 400 with incorrect file format', async () => {
+        const response = await request.get('/0001-.txt')
+        // 404
+        expect(response.status).toBe(404)
+    })
+
+    it('Should handle sql injection', async () => {
+        const response = await request.get('\; DROP TABLE Categories;-.json')
+        // 404
+        expect(response.status).toBe(404)
+    })
+
 })
