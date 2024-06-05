@@ -13,3 +13,5 @@ How to run tests:
 
 
 Need to make sure node versions are the same.
+
+If you want to test more browsers you can change that in the playwright.config.ts.
