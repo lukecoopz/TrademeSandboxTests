@@ -52,6 +52,15 @@ test.describe('searhbox tests', () => {
     // Search box is cleared
     await expect(page.locator('input[name="search"]')).toBeEmpty();
   });
+
+  test('search does not allow sql injection', async ({ page }) => {
+    await page.fill('input[name="search"]', 'test\;\<body onload=alert(\'test1\')>');
+    await page.click('button[aria-label="Search all of Trade Me"]');
+
+  
+    
+    await expect(page.getByText('Showing 0 results for \'test')).toBeVisible({timeout:3000});
+  });
 })
 
 
