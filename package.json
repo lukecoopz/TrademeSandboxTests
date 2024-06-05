@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx jest specs/poc.spec.ts"
+    "test-api": "npx jest specs/categories.spec.ts", 
+    "test-ui" : "npx playwright test" 
   },
   "keywords": [],
   "author": "",
