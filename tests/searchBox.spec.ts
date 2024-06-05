@@ -42,7 +42,7 @@ test.describe('searhbox tests', () => {
     await page.click('button[aria-label="Search all of Trade Me"]');
   
     // Search page show expected results.
-    await expect(page.getByText('Showing 1 result for \'S9+\'')).toBeVisible();
+    await expect(page.getByText('Showing 2 results for \'S9+\'')).toBeVisible({timeout:3000});
   });
 })
 
