@@ -1,0 +1,13 @@
+Explore and list the test cases for the ‘Search’ functionality on the homepage.
+
+Functional:
+    - User can type into search box and click search (shows relevent results)
+    - Searching something that does not exsist shows 0 results i.e. Unicorn
+    - Searching with numbers/special characters shows results
+    - Autofill capabilities
+
+Non-Functional:
+    - Search performance (time taken to search)
+    - Load test the search, lots of search clicks
+    - Security of search box (SQL injection test)
+    
