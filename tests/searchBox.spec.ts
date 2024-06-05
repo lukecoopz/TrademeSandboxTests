@@ -57,9 +57,9 @@ test.describe('searhbox tests', () => {
     await page.fill('input[name="search"]', 'test\;\<body onload=alert(\'test1\')>');
     await page.click('button[aria-label="Search all of Trade Me"]');
 
-  
-    
+    //Should show 0 results and no alert shown on page
     await expect(page.getByText('Showing 0 results for \'test')).toBeVisible({timeout:3000});
+    await expect(page.getByText('test1')).toHaveCount(1, {timeout:3000});
   });
 })
 
