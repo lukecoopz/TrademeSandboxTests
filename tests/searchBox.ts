@@ -1,9 +1,10 @@
 import { test, expect } from '@playwright/test';
 
-test('has title', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
+test('can search for results', async ({ page }) => {
+  await page.goto('https://www.tmsandbox.co.nz/');
+  await page.fill('input[name="search"]', 'laptop')
 
-  // Expect a title "to contain" a substring.
+  // Search page show expected results.
   await expect(page).toHaveTitle(/Playwright/);
 });
 
