@@ -5,12 +5,12 @@
 
 
 How to run tests:
-- Clone repo
-- npm i
-- npx playwright install
-- npm run test-api (for api test)
-- npm run test-ui (for playwright ui tests)
-- npm run report-test-ui to get report for ui tests after running
+- Clone the repo
+- run 'npm i' in terminal
+- run 'npx playwright install' in terminal
+- run 'npm run test-api' (for api test) in terminal
+- run 'npm run test-ui' (for playwright ui tests) in terminal
+- run 'npm run report-test-ui' to get report for ui tests after running
 
 
 Need to make sure node versions are the same.
