@@ -1,6 +1,6 @@
 # Automated tests related to TradeMe Sandbox page
- Testing cases for trademe sandbox home page in text files, this is high level overview.
- Automated ui test cases as well written in Typescript using Playwright. API tests in specs/categories.spec.ts, ui tests in tests/searchBox.spec.ts.
+ Manual testing cases for trademe sandbox home page in folder 'manual-test-docs', this is high level overview of homepage and search functionality.
+ Automated ui test cases are written in Typescript using Playwright. API tests also written in Typescript. API tests in specs/categories.spec.ts, ui tests in tests/searchBox.spec.ts.
 
 
 
@@ -13,6 +13,7 @@ How to run tests:
 - run 'npm run report-test-ui' to get report for ui tests after running
 
 
-Need to make sure node versions are the same.
+Ensure node version is the same (v20.4.0)
+Ensure npm version is the same (9.7.2)
 
-If you want to test more browsers you can change that in the playwright.config.ts.
+If you want to test more browsers you can change that in the playwright.config.ts (currently it is defaulted to only test in Chromium).
