@@ -21,7 +21,7 @@ test.describe('searhbox tests', () => {
     await page.fill('input[name="search"]', 'unicorn');
     await page.click('button[aria-label="Search all of Trade Me"]');
   
-    // Search page show expected results.
+    // Search page show no results for uncommon search term
     await expect(page.getByText('Showing 0 results for \'unicorn\'')).toBeVisible();
   });
 
@@ -41,8 +41,16 @@ test.describe('searhbox tests', () => {
     await page.fill('input[name="search"]', 'S9+');
     await page.click('button[aria-label="Search all of Trade Me"]');
   
-    // Search page show expected results.
+    // Search page shows 2 results
     await expect(page.getByText('Showing 2 results for \'S9+\'')).toBeVisible({timeout:3000});
+  });
+
+  test('clearing search box', async ({ page }) => {
+    await page.fill('input[name="search"]', 'Testing');
+    await page.click('tg-icon[name="basic-cross"]');
+  
+    // Search box is cleared
+    await expect(page.locator('input[name="search"]')).toBeEmpty();
   });
 })
 
