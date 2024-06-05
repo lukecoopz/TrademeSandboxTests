@@ -10,6 +10,7 @@ How to run tests:
 - npx playwright install
 - npm run test-api (for api test)
 - npm run test-ui (for playwright ui tests)
+- npm run report-test-ui to get report for ui tests after running
 
 
 Need to make sure node versions are the same.
