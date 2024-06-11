@@ -1,5 +1,5 @@
 # Automated tests related to TradeMe Sandbox page
- Manual testing cases for trademe sandbox home page in folder 'manual-test-docs', this is high level overview of homepage and search functionality.
+ Manual testing cases for trademe sandbox home page in folder 'manual-test-docs', this is high level overview of homepage functionality.
  Automated ui test cases are written in Typescript using Playwright. API tests also written in Typescript. API tests in specs/categories.spec.ts, ui tests in tests/searchBox.spec.ts.
 
 

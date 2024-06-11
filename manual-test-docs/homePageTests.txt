@@ -2,7 +2,7 @@ List the test cases for the home page:
 
 Smoke test cases: (Basic functionality tests to make sure app has basics working)
     - Homepage loads correctly
-    - Users can click on links tabs, search box etc. (all links working)
+    - Users can click on links tabs, search box etc. (main links working, MVP of site for smoke tests)
     - Users can use search box (returns relevant results, check for scripting attacks)
     - Users can login/register (Login has popup modal)
 
