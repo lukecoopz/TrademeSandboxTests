@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test-api": "npx jest specs/categories.spec.ts", 
+    "test-api": "npx jest api-specs/categories.spec.ts", 
     "test-ui" : "npx playwright test",
     "report-test-ui": " npx playwright show-report"
   },
