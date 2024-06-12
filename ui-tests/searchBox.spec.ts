@@ -17,7 +17,7 @@ test.describe('Search Box Tests', () => {
     await page.click(searchButton);
 
     // Verify the search page shows expected results
-    await expect(page.getByText('Showing 0 results for \'hilux\'')).toBeVisible();
+    await expect(page.getByText('Showing 0 results for \'hilux\'')).toBeVisible();//not best way as search results vary need to change this
   });
 
   test('should show 0 results for an uncommon search term', async ({ page }) => {
@@ -45,7 +45,7 @@ test.describe('Search Box Tests', () => {
     await page.click(searchButton);
 
     // Verify the search page shows expected results
-    await expect(page.getByText('Showing 2 results for \'S9+\'')).toBeVisible({ timeout: 3000 });
+    await expect(page.getByText('Showing 2 results for \'S9+\'')).toBeVisible({ timeout: 3000 });//again not best way as search results may vary in test
   });
 
   test('should clear the search box', async ({ page }) => {

@@ -17,3 +17,8 @@ Ensure node version is the same (v20.4.0)
 Ensure npm version is the same (9.7.2)
 
 If you want to test more browsers you can change that in the playwright.config.ts (currently it is defaulted to only test in Chromium).
+
+
+TODO:
+- add video record of tests
+- improve selecting of elements on page
